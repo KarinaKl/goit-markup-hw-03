@@ -13,21 +13,6 @@
 html {
   box-sizing: border-box;
 }
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-/* p,
-h1,
-h2,
-h3,
-h4,
-h5 {
-  margin-top: 0;
-  margin-bottom: 0;
-} */
 
 body {
   color: var(--black-main-color);
@@ -36,7 +21,6 @@ body {
 }
 
 .container {
-  width: 100%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -62,6 +46,12 @@ body {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
 img {
   display: block;
   max-width: 100%;
@@ -115,16 +105,6 @@ img {
   margin-left: 93px;
 }
 
-.header-nav .header-item + .header-item {
-  margin-left: 50px;
-}
-/* .header-item:not(:last-child) {
-  margin-right: 50px;
-} */
-/* .header-item:last-child {
-  margin-right: 0;
-} */
-
 .header-link {
   display: block;
   padding-top: 32px;
@@ -176,14 +156,19 @@ img {
 /* --------------------------Hero----------------------- */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: var(--bg-grey-color);
 }
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-  padding-top: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 0 auto 30px auto;
 
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -194,7 +179,6 @@ img {
 .hero-btn {
   border: none;
   border-radius: 4px;
-  margin-bottom: 200px;
   padding: 10px 32px;
 
   font-family: inherit;
@@ -220,7 +204,7 @@ img {
   gap: 30px;
 }
 .features-item {
-  width: 400px;
+  max-width: 270px;
 }
 .features-title {
   margin-top: 0;
@@ -248,8 +232,7 @@ img {
   padding-top: 0;
 }
 .about-title {
-  margin-top: 0;
-  margin-bottom: 50;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -321,8 +304,7 @@ img {
 
 .footer-logo {
   display: block;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -336,6 +318,10 @@ img {
 
 /* ------------------------Footer-address---------------------------- */
 
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .address-list {
   font-style: normal;
   font-size: 14px;
@@ -343,11 +329,9 @@ img {
   letter-spacing: 0.03em;
 }
 .address-descr:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
-.address-descr {
-  padding-bottom: 60px;
-}
+
 .address-map {
   color: var(--white-color);
 }
@@ -424,7 +408,7 @@ img {
 }
 .project-title {
   margin: 0;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
